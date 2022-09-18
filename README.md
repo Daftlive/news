@@ -2,11 +2,20 @@
 
 **This project has been done using React Native and Typescript.** 
 
-The app is a news reader that uses [newsapi.org](https://newsapi.org/) as a data source to display the news.
+The app is a news reader that uses [newsapi.org](https://newsapi.org/) as a data source.
 
-Different sources can be selected, either by country and category.
+News can be obtained from different resources such as country or categories. It also has a system that automatically saves the news on the device for offline access. The refresh time of the news can be configured.
 
-News is automatically saved on the device to avoid unnecessary calls to the api. The news refresh rate can be configured, which means how often the application should query the api.
+It has a simple search engine taking advantage of the power offered by Akita.
+
+## Features 
+
+ - Typescript
+ - Akita | State Management 
+ - React Navigation
+ - AsyncStorage
+ - React Native Web
+
 
 ## Screen Shots
 <p float="left">
