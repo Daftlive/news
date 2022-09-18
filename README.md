@@ -6,7 +6,7 @@ The app is a news reader that uses [newsapi.org](https://newsapi.org/) as a data
 
 News can be obtained from different resources such as country or categories. It also has a system that automatically saves the news on the device for offline access. The refresh time of the news can be configured.
 
-It has a simple search engine taking advantage of the power offered by Akita.
+It has a simple search engine taking advantage of the power offered by [Akita](https://opensource.salesforce.com/akita/).
 
 ## Features 
 
