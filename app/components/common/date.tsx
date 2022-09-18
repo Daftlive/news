@@ -1,16 +1,17 @@
 import { StyleProp, Text, TextStyle } from "react-native";
 
-interface IDateTextParams {
-  date: Date;
-  style: StyleProp<TextStyle>;
-}
-
 /**
  * Format the date using 'Intl.DateTimeFormat' avoiding using third party dependencies.
  * @param IDateTextParams
  * @returns JSX.Element
  */
-const DateText = ({ date, style }: IDateTextParams) => {
+const DateText = ({
+  date,
+  style,
+}: {
+  date: Date;
+  style?: StyleProp<TextStyle>;
+}) => {
   //TODO: Pass by parameters more countries to get format for each region.
   const _date = new Intl.DateTimeFormat("en-US", {
     dateStyle: "full",
