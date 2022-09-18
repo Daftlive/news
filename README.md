@@ -2,7 +2,7 @@
 
 **This project has been done using React Native and Typescript.** 
 
-The app is a news reader that uses www.newsapi.org as a data source to display the news.
+The app is a news reader that uses [newsapi.org](https://newsapi.org/) as a data source to display the news.
 
 Different sources can be selected, either by country and category.
 
@@ -34,7 +34,3 @@ $ npm run start
 ````
 
 > The application has also been configured for web use.
-
-
-
-
