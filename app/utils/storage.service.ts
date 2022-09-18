@@ -1,13 +1,13 @@
-import { Platform } from "react-native";
-import * as SecureStore from "expo-secure-store";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-export const getItem = async (key: string) => {
+/**
+ * Gets a key from the device's storage.
+ * @param key
+ * @returns string | null
+ */
+export const getStorageItem = async (key: string) => {
   try {
-    const item =
-      Platform.OS === "ios" || Platform.OS === "android"
-        ? await SecureStore.getItemAsync(key)
-        : await AsyncStorage.getItem(key);
+    const item = await AsyncStorage.getItem(key);
     return item;
   } catch (error) {
     console.log(error);
@@ -15,11 +15,15 @@ export const getItem = async (key: string) => {
   }
 };
 
-export const setItem = async (key: string, item: string) => {
+/**
+ * Adds or overwrites an item to device storage.
+ * @param key
+ * @param item
+ * @returns boolean
+ */
+export const setStorageItem = async (key: string, item: string) => {
   try {
-    Platform.OS === "ios" || Platform.OS === "android"
-      ? await SecureStore.setItemAsync(key, item)
-      : await AsyncStorage.setItem(key, item);
+    await AsyncStorage.setItem(key, item);
     return true;
   } catch (error) {
     console.log(error);
@@ -27,11 +31,14 @@ export const setItem = async (key: string, item: string) => {
   }
 };
 
-export const deleteItem = async (key: string) => {
+/**
+ * Remove an item from the device's storage
+ * @param key
+ * @returns boolean
+ */
+export const deleteStorageItem = async (key: string) => {
   try {
-    Platform.OS === "ios" || Platform.OS === "android"
-      ? await SecureStore.deleteItemAsync(key)
-      : await AsyncStorage.removeItem(key);
+    await AsyncStorage.removeItem(key);
     return true;
   } catch (error) {
     console.log(error);
