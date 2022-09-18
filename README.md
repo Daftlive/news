@@ -17,6 +17,12 @@ It has a simple search engine taking advantage of the power offered by [Akita](h
  - React Native Web
 
 
+## Design Patterns
+
+ - **Patron Compound:** This pattern is illustrated in the country and category selection options for example.
+ - **High Order Component Pattern:** It is used in several components of the application, with maximum scalability and code maintenance in mind.
+ - **Observer Pattern:** The base of the app's working. From fetching data from the api/store, to searching and options. Maximum versatility and reactivity, without technical debt.
+
 ## Screen Shots
 <p float="left">
   <img src="https://github.com/Daftlive/news/blob/develop/screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2013%20-%202022-09-18%20at%2017.36.21.png?raw=true" width="160" />
