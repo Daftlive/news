@@ -19,7 +19,7 @@ It has a simple search engine taking advantage of the power offered by [Akita](h
 
 ## Design Patterns
 
- - **Patron Compound:** This pattern is illustrated in the country and category selection options for example.
+ - **Compound Pattern:** This pattern is illustrated in the country and category selection options for example.
  - **High Order Component Pattern:** It is used in several components of the application, with maximum scalability and code maintenance in mind.
  - **Observer Pattern:** The base of the app's working. From fetching data from the api/store, to searching and options. Maximum versatility and reactivity, without technical debt.
 
