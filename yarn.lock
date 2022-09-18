@@ -1102,10 +1102,10 @@
     "@babel/helper-validator-identifier" "^7.18.6"
     "to-fast-properties" "^2.0.0"
 
-"@datorama/akita@^7.1.1":
-  "integrity" "sha512-x/RgwleA1u/Z3ICL7OBSsiUByzIwSjAnx4IcdgIYS090wc2C94u4UG5mWP8Yx98NUS6mnFeHLUVllXP+BQsl1A=="
-  "resolved" "https://registry.npmjs.org/@datorama/akita/-/akita-7.1.1.tgz"
-  "version" "7.1.1"
+"@datorama/akita@^6.1.3":
+  "integrity" "sha512-bSaYvLn+OEfLIaqDd4Ur5fWy2L0TJyWPZU3SIbhDaCPN52M0upnk2GNPqIUyGLQem9LCzpwkIGW9mvafgEv93w=="
+  "resolved" "https://registry.npmjs.org/@datorama/akita/-/akita-6.2.4.tgz"
+  "version" "6.2.4"
   dependencies:
     "schematics-utilities" "^2.0.3"
 
@@ -4708,6 +4708,11 @@
   "resolved" "https://registry.npmjs.org/expo-keep-awake/-/expo-keep-awake-10.2.0.tgz"
   "version" "10.2.0"
 
+"expo-linear-gradient@~11.4.0":
+  "integrity" "sha512-qtIfsLs7NOpfxYrFSJL5uLtNHIkBHQFuQ3f7++XpoJTSm4eQVFxjjkCGWiLIrkpVjKzmgp3DLuIVsadsGX21lA=="
+  "resolved" "https://registry.npmjs.org/expo-linear-gradient/-/expo-linear-gradient-11.4.0.tgz"
+  "version" "11.4.0"
+
 "expo-modules-autolinking@>=0.8.1", "expo-modules-autolinking@0.10.3":
   "integrity" "sha512-av9ln2zwUt303g98raX7sDmESgL3SXs1sbbtIjh1rL7R0676XIUacIKgbydR0/4tMbOShWx14Z9fozpk9xIAJA=="
   "resolved" "https://registry.npmjs.org/expo-modules-autolinking/-/expo-modules-autolinking-0.10.3.tgz"
@@ -5746,11 +5751,6 @@
     "setprototypeof" "1.2.0"
     "statuses" "2.0.1"
     "toidentifier" "1.0.1"
-
-"http-parser-js@>=0.5.1":
-  "integrity" "sha512-SGeBX54F94Wgu5RH3X5jsDtf4eHyRogWX1XGT3b4HuW3tQPM4AaBzoUji/4AAJNXCEOWZ5O0DgZmJw1947gD5Q=="
-  "resolved" "https://registry.npmjs.org/http-parser-js/-/http-parser-js-0.5.8.tgz"
-  "version" "0.5.8"
 
 "http-proxy-agent@^2.1.0":
   "integrity" "sha512-qwHbBLV7WviBl0rQsOzH6o5lwyOIvwp/BdFnvVxXORldu5TmjFfjzBcWUWS5kWAZhmv+JtiDhSuQCp4sBfbIgg=="
@@ -9080,7 +9080,7 @@
   "resolved" "https://registry.npmjs.org/react-freeze/-/react-freeze-1.0.3.tgz"
   "version" "1.0.3"
 
-"react-is@^16.12.0 || ^17.0.0 || ^18.0.0":
+"react-is@^16.12.0 || ^17.0.0 || ^18.0.0", "react-is@^18.0.0":
   "integrity" "sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w=="
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-18.2.0.tgz"
   "version" "18.2.0"
@@ -9201,13 +9201,22 @@
   "resolved" "https://registry.npmjs.org/react-refresh/-/react-refresh-0.4.3.tgz"
   "version" "0.4.3"
 
-"react-shallow-renderer@16.15.0":
+"react-shallow-renderer@^16.13.1", "react-shallow-renderer@16.15.0":
   "integrity" "sha512-oScf2FqQ9LFVQgA73vr86xl2NaOIX73rh+YFqcOp68CWj56tSfgtGKrEbyhCj0rSijyG9M1CYprTh39fBi5hzA=="
   "resolved" "https://registry.npmjs.org/react-shallow-renderer/-/react-shallow-renderer-16.15.0.tgz"
   "version" "16.15.0"
   dependencies:
     "object-assign" "^4.1.1"
     "react-is" "^16.12.0 || ^17.0.0 || ^18.0.0"
+
+"react-test-renderer@^18.0.0":
+  "integrity" "sha512-SyZTP/FSkwfiKOZuTZiISzsrC8A80KNlQ8PyyoGoOq+VzMAab6Em1POK/CiX3+XyXG6oiJa1C53zYDbdrJu9fw=="
+  "resolved" "https://registry.npmjs.org/react-test-renderer/-/react-test-renderer-18.0.0.tgz"
+  "version" "18.0.0"
+  dependencies:
+    "react-is" "^18.0.0"
+    "react-shallow-renderer" "^16.13.1"
+    "scheduler" "^0.21.0"
 
 "react@*", "react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^17.0.2 || ^18.0.0", "react@^18.0.0", "react@>=17.0.0", "react@18.0.0":
   "integrity" "sha512-x+VL6wbT4JRVPm7EGxXhZ8w8LTROaxPXOqhlGyVSrv0sB1jkyFGgXxJ8LVoPRLvPR6/CIZGFmfzqUa2NYeMr2A=="
@@ -9604,7 +9613,7 @@
   dependencies:
     "tslib" "^1.9.0"
 
-"safe-buffer@^5.0.1", "safe-buffer@^5.1.0", "safe-buffer@^5.1.1", "safe-buffer@^5.1.2", "safe-buffer@^5.2.0", "safe-buffer@^5.2.1", "safe-buffer@>=5.1.0", "safe-buffer@~5.2.0", "safe-buffer@5.2.1":
+"safe-buffer@^5.0.1", "safe-buffer@^5.1.0", "safe-buffer@^5.1.1", "safe-buffer@^5.1.2", "safe-buffer@^5.2.0", "safe-buffer@^5.2.1", "safe-buffer@~5.2.0", "safe-buffer@5.2.1":
   "integrity" "sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ=="
   "resolved" "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.2.1.tgz"
   "version" "5.2.1"
@@ -10751,7 +10760,7 @@
   "resolved" "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
   "version" "1.14.1"
 
-"tslib@^2.0.1", "tslib@^2.0.3", "tslib@^2.1.0":
+"tslib@^2.0.0", "tslib@^2.0.1", "tslib@^2.0.3", "tslib@^2.1.0":
   "integrity" "sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ=="
   "resolved" "https://registry.npmjs.org/tslib/-/tslib-2.4.0.tgz"
   "version" "2.4.0"
@@ -11275,16 +11284,7 @@
     "watchpack" "^1.6.1"
     "webpack-sources" "^1.4.1"
 
-"websocket-driver@>=0.5.1":
-  "integrity" "sha512-b17KeDIQVjvb0ssuSDF2cYXSg2iztliJ4B9WdsuB6J952qCPKmnVq4DyW5motImXHDC1cBT/1UezrJVsKw5zjg=="
-  "resolved" "https://registry.npmjs.org/websocket-driver/-/websocket-driver-0.7.4.tgz"
-  "version" "0.7.4"
-  dependencies:
-    "http-parser-js" ">=0.5.1"
-    "safe-buffer" ">=5.1.0"
-    "websocket-extensions" ">=0.1.1"
-
-"websocket-driver@0.6.5":
+"websocket-driver@>=0.5.1", "websocket-driver@0.6.5":
   "integrity" "sha512-oBx6ZM1Gs5q2jwZuSN/Qxyy/fbgomV8+vqsmipaPKB/74hjHlKuM07jNmRhn4qa2AdUwsgxrltq+gaPsHgcl0Q=="
   "resolved" "https://registry.npmjs.org/websocket-driver/-/websocket-driver-0.6.5.tgz"
   "version" "0.6.5"
