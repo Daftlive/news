@@ -5,8 +5,8 @@ import { News } from "./news.model";
 import { NewsStore, newsStore } from "./news.store";
 
 interface INewsParams {
-  country?: "mx" | "us";
-  category?:
+  country: "mx" | "us";
+  category:
     | "business"
     | "entertainment"
     | "general"
