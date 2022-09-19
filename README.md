@@ -15,6 +15,7 @@ It has a simple search engine taking advantage of the power offered by [Akita](h
  - React Navigation
  - AsyncStorage
  - React Native Web
+ - Jest Testing
 
 
 ## Design Patterns
